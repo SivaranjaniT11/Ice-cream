@@ -1,325 +1,86 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin:0; padding:0;
     box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    outline: none; border:none;
+    
 }
-/* navbar */
-#logo span{
-    color: rgb(23, 23, 169);
+html{
+    font-size:20px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
 }
-.nav-link{
-    font-weight: bold;
+.bg{
+    background-color: rgb(204, 202, 200);
 }
-.nav-link:hover{
-    background-color:rgb(23, 5, 103);
-    border-radius: 5px;
+.btn1{
+    margin-left: 1%;
 }
-.nav-item a:hover{
-    color: antiquewhite;
+.btn1:hover{
+    color:rgb(148, 6, 93);
+}
+#home .card-img-overlay{
+    margin-top:15%;
 }
 .section-padding{
-    padding: 10px 0;
+    padding: 120px 0;
 }
-.section-padding1{
-    padding: 20% 0;
-}
-
-.dropdown-menu {
-   box-shadow: 1px 2px 2px 3px blue;
+#Products .col{
+transition:0.5s ease;
+cursor: pointer;
 
 }
-#about h1,#falvors h1,#contact h1,#gallery h1{
-    text-align: center;
-    font-weight: bold;
-    margin-top: 50px;
-    color: rgb(7, 7, 148);
-    text-shadow: 1px 1px 1px black;
-    border-bottom: 5px solid rgb(7, 7, 148);
+#Products .nav-link:focus{
+    transform: scale(1.1);
 }
 
-
-.home{
-    width: 100%;
-    height: 88.5vh;
-    display: flex;
-    background-image: linear-gradient(#0615be,#29027dd5);
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: relative;
+#Products .col:hover{
+    transform: translateY(20px);
 }
-.home .img img{
-    width: 60%;border: 4px solid white;
+#product .box:hover{
+    background-color:rgb(148, 6, 93);
 }
-.home .content{
-    flex: 1 1 400px;
-    margin-left: 60px;
+.icons .fa-square-instagram:hover,.fa-square-whatsapp:hover,.fa-square-twitter:hover
+{
+    
+    color: rgb(72, 2, 47);
 }
-.content h3{
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px black;
-}
-.content h2{
-    font-size: 60px;
-    color: white;
-    text-shadow: 1px 1px 1px black;
-    font-weight: bold;
-}
-.change::after{
-    content: "";
-    color: rgb(99, 3, 99);
-    animation: changetext 10s infinite linear;
-    font-weight: bold;
-}
-@keyframes changetext{
-    0%{content: "Chocolate";}
-    20%{content: "Strewberry";}
-    50%{content: "Vanilla-ice";}
-    70%{content: "Butterscotch";}
-    90%{content: "Cone-ice";}
-    100%{content: "Mango-ice";}
-}
-.content p{
-    color: white;
-    text-shadow: 1px 1px 1px black;
-}
-.content .btn{
-    width: 110px;
-    height: 38px;
-    background-color: #07106b;
-    color: white;
-    box-shadow: 1px 2px 2px 1px black;
-}
-.content .btn:hover{
-    background-color: rgb(91, 5, 115);
-    color: white;
-}
-
-/* home section end */
-
-/* cards */
-#box{
-    margin-top: 50px;
-}
-#box .card{
-    box-shadow: 1px 5px 5px 1px black;
-    margin-top: 10px;
-    cursor: pointer;
-    transition:0.5s ease;
-}
-#box .card:hover{
-    transform: translateY(10px);
-}
-
-/* banner */
-.banner{
-    width: 100%;
-    height: 60vh;
-    display: flex;
-    background-image: linear-gradient(#0615be,#29027dd5);
-    background-size: cover;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    box-shadow: 1px 2px 2px 1px black;
-    margin-top: 50px;
-}
-.banner .img{
-    flex: 1 1 300px;
-}
-.banner .img img{
-    width: 70%;
-    border: 4px solid white;
-}
-.banner .content{
-    flex: 1 1 400px;
-    margin-left: 60px;
-    margin-top: 50px;
-}
-.banner .content h3{
-    color: white;
-    font-weight: bold;
-}
-.banner .content h2{
-    font-size: 50px;
-    color:white;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px black;
-}
-.banner .content p{
-    color:white;
-}
-#btnorder button{
-    width: 140px;
-    height: 40px;
-    background-color: rgb(24, 4, 117);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 1px 2px 2px 1px black;
-}
-#btnorder button:hover{
-transform: translateY(-6px);
-background-color: rgb(91, 6, 91); 
-color: white;
-}
-
-/* banner end */
-
-/* about */
-#about{
-    margin-top: 50px;
-}
-#about .card{
-    background-color: rgb(211, 209, 203);
-    box-shadow: 0px 0px 5px black;
-    border: 3px solid rgb(9, 9, 133);
-}
-#about p{
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-    text-shadow: 0px 1px 0px rgb(29, 4, 132);
-    font-style: italic;
-}
-#bt button{
-    width: 150px;
-    height: 32px;
-    background-color: rgb(24, 4, 117);
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-
-/* falvors */
-#falvors{
-    margin-top: 50px;
-}
-
-#falvors .card{
-    box-shadow: 3px 3px 3px black;
-    cursor: pointer;
-}
-#falvors .overlay{
-    opacity: 0;
-    width: 100%;
-    color: white;
-    text-shadow: 1px 2px 1px black;
-}
-#falvors .card:hover .overlay{
-    opacity: 5;
-    margin-top: 5%;
-    transition: 0.5s ease;
-}
-
-/*Contact */
-
-#contact button{
-   margin-left:43% ;
-   border: none;cursor: pointer;
-}
-
-#footer{
-    width: 100%;    
-    background-image: linear-gradient(#0615be,#29027dd5);
-    box-shadow: 0px 0px 5px black;
-    margin-top: 100px;
-}
-#footer h1{
-    color: white;
-    padding-top: 30px;
-}
-#footer p{
-    color: white;
-}
-
-.icons i{
-    background-color: white;
-    color: #1b08ab;
-    border-radius: 50px;
-    padding: 6px;
-    font-size: 30px;
-    transition: 0.5s;
-    cursor: pointer;
-}
-.icons i:hover{
-    background-color: rgb(4, 30, 183);
-    color: white;
-}
-.copyright{
-    color: white;
-    margin-top: 20px;
+footer{
+    background-color: rgb(251, 117, 139);
+    color:rgb(76, 2, 50);
+     opacity:.9;
 }
 
 
 
 
-
-
-@media screen and (max-width:800px){
-    .banner .content h3{
-        font-size: 50px;
+@media (max-width:991px){
+    
+    html{
+        font-size:15px;
     }
-}
-@media screen and (max-width:855px){
-    .banner{
-        height: 100vh;
+    #Products .col:hover{
+        cursor: pointer;
+        transform: translateY(-5px);
     }
-}
-
-@media screen and (max-width:800px){
-    .content h3{
-        font-size: 50px;
+    #about .col img{
+        margin-top: 15%;
+        width: 70%;
     }
-}
-@media screen and (max-width:860px){
-    .home{
-        height: 120vh;
-    }
-    .home .content{
-        font-size: 18px;
-        margin-left: 3px;
-    }
-    .home .img img{
-        margin-left: 70px;
-    }
-    #contact button{
-        margin-left: 30%;
-    }
-}
-@media screen and (max-width:560px){
-    .home{
-        height: 100vh;
-    }
-    .home .content{
-        font-size: 18px;
-        margin-left: 3px;
-    }
-    .home .img img{
-        margin-left: 70px;
-    }
-    #contact button{
-        margin-left: 30%;
-    }
-}
-@media screen and (max-width:330px){
-    .content h2{
-        font-size: 30px;
-    }
-    .content h3{
-        font-size: 30px;
-    }
-}
-@media screen and (max-width:1000px){
-    #about p{
+    #about .col{
         font-size: 10px;
-    }
+    } 
 }
-@media screen and (max-width:760px){
-    #about p{
-        font-size: 20px;
+
+@media (max-width:450px){
+    
+    html{
+        font-size: 50%;
     }
+    #Products .col:hover{
+        cursor: pointer;
+        transform: translateY(-5px);
+    }
+
 }
